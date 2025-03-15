@@ -2,9 +2,9 @@
 
 int main() {
     Graph G;
-    file_to_graph("small.txt", G);
+    file_to_graph("src/small.txt", G);
 
-    int source = 0, destination = 3;
+    int source = 0, destination = 1;
     vector<int> previous;
     vector<int> distances = dijkstra_shortest_path(G, source, previous);
     
